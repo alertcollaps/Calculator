@@ -75,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 if (Logic.isNumber(peek()+str) && !Logic.isAction(peek())){
+                    if (peek().equals("0") && !str.equals(",") && Logic.isNumber(str)){
+                        delEnter();
+                        pop();
+                    }
                     String temp = pop();
                     push(temp+str);
                     addEnter(str);
