@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.example.calculator.Button1
+                android:text="7"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/seven"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="4dp"/>
+        <com.example.calculator.Button1
+                android:text="4"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/four"
+                app:layout_constraintStart_toStartOf="@+id/seven" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/seven"/>
+        <com.example.calculator.Button1
+                android:text="8"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/eight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@+id/seven"
+                app:layout_constraintTop_toTopOf="@+id/seven"/>
+        <com.example.calculator.Button1
+                android:text="9"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/nine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@+id/eight"
+                app:layout_constraintTop_toTopOf="@+id/eight"/>
+        <com.example.calculator.Button1
+                android:text="-"
+                android:layout_width="90dp"
+                android:layout_height="65dp" android:id="@+id/minus"
+                app:layout_constraintTop_toBottomOf="@+id/multiplicate"
+                app:layout_constraintStart_toEndOf="@+id/equal"/>
+        <com.example.calculator.Button1
+                android:text="+"
+                android:layout_width="94dp"
+                android:layout_height="64dp" android:id="@+id/plus"
+                app:layout_constraintTop_toBottomOf="@+id/minus" app:layout_constraintStart_toEndOf="@+id/equal"
+        />
+        <com.example.calculator.Button1
+                android:text="×"
+                android:layout_width="92dp"
+                android:layout_height="70dp" android:id="@+id/multiplicate"
+                app:layout_constraintTop_toBottomOf="@+id/divide" app:layout_constraintStart_toEndOf="@+id/three"/>
+        <com.example.calculator.Button1
+                android:text="÷"
+                android:layout_width="91dp"
+                android:layout_height="70dp" android:id="@+id/divide"
+                app:layout_constraintTop_toBottomOf="@+id/backspace" app:layout_constraintStart_toEndOf="@+id/six"/>
+        <com.example.calculator.Button1
+                android:text="del"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/backspace"
+                app:layout_constraintTop_toTopOf="@+id/nine" app:layout_constraintStart_toEndOf="@+id/nine"/>
+        <com.example.calculator.Button1
+                android:text="="
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/equal"
+                app:layout_constraintTop_toBottomOf="@+id/three" app:layout_constraintStart_toEndOf="@+id/dot"/>
+        <com.example.calculator.Button1
+                android:text=","
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/dot"
+                app:layout_constraintTop_toBottomOf="@+id/two" app:layout_constraintStart_toEndOf="@+id/zero"/>
+        <com.example.calculator.Button1
+                android:text="0"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/zero"
+                app:layout_constraintTop_toBottomOf="@+id/one" app:layout_constraintStart_toStartOf="@+id/one"/>
+        <com.example.calculator.Button1
+                android:text="3"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/three"
+                app:layout_constraintTop_toBottomOf="@+id/six" app:layout_constraintStart_toEndOf="@+id/two"/>
+        <com.example.calculator.Button1
+                android:text="2"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/two"
+                app:layout_constraintTop_toBottomOf="@+id/five" app:layout_constraintStart_toEndOf="@+id/one"/>
+        <com.example.calculator.Button1
+                android:text="1"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/one"
+                app:layout_constraintTop_toBottomOf="@+id/four" app:layout_constraintStart_toStartOf="@+id/four"/>
+        <com.example.calculator.Button1
+                android:text="6"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/six"
+                app:layout_constraintTop_toBottomOf="@+id/nine" app:layout_constraintStart_toEndOf="@+id/five"/>
+        <com.example.calculator.Button1
+                android:text="5"
+                android:layout_width="88dp"
+                android:layout_height="89dp" android:id="@+id/five"
+                app:layout_constraintTop_toBottomOf="@+id/eight" app:layout_constraintStart_toEndOf="@+id/four"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    />
+</RelativeLayout>
+
