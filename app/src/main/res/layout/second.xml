@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@android:color/white"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <TextView
-            android:text="2"
-            android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    <LinearLayout
+            android:layout_weight="1"
             android:layout_width="wrap_content"
-            android:layout_centerInParent="true"
-            android:textSize="140px"
-            android:textStyle="bold"/>
+            android:orientation="vertical"
+            android:layout_height="371dp" android:layout_centerInParent="true">
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <com.example.calculator.Button1
+                    android:text="mod"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mod"/>
+            <com.example.calculator.Button1
+                    android:text="^"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/extent"
+                    />
+            <com.example.calculator.Button1
+                    android:text=""
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toEndOf="@+id/eight"
+                    app:layout_constraintTop_toTopOf="@+id/eight"/>
+            <com.example.calculator.Button1
+                    android:text=""
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toTopOf="@+id/nine" app:layout_constraintStart_toEndOf="@+id/nine"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
 </RelativeLayout>
+

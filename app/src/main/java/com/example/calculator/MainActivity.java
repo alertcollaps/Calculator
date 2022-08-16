@@ -13,6 +13,8 @@ import android.os.Bundle;
 
 import java.util.Stack;
 
+import static com.example.calculator.Logic.mod;
+
 public class MainActivity extends AppCompatActivity {
     final int MIN_SHIFT = 300;
     public static MainActivity mn;
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
     Button1 minus;
     Button1 plus;
     Button1 equal;
+    Button1 mod;
+    Button1 extent;
 
 
 
@@ -58,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         mn = this;
-
+        System.out.println(mod(204, 173, 323));
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -172,6 +176,8 @@ public class MainActivity extends AppCompatActivity {
         equal=findViewById(R.id.equal);
         enter = findViewById(R.id.enter);
         result = findViewById(R.id.result);
+        mod = findViewById(R.id.mod);
+        extent = findViewById(R.id.extent);
 
         one.setOnClickListener(onClickListener);
         two.setOnClickListener(onClickListener);
@@ -190,6 +196,8 @@ public class MainActivity extends AppCompatActivity {
         minus.setOnClickListener(onClickListener);
         plus.setOnClickListener(onClickListener);
         equal.setOnClickListener(onClickListener);
+        mod.setOnClickListener(onClickListener);
+        extent.setOnClickListener(onClickListener);
     }
 
     public boolean onTouchEvent(MotionEvent event)
